@@ -7,7 +7,7 @@
  *
  * Return: 0 on success, 1 on error 
  */
-int main(int ac, char**av)
+int main(int ac, char **av)
 {
 	info_t info[] = { INFO_INIT };
 	int fd = 2;
@@ -30,19 +30,15 @@ int main(int ac, char**av)
 				_eputs(": 0: Can't open ");
 				_eputs(av[1]);
 				_eputchar('\n');
-				_eputchar((BUF_FLUSH));
+				_eputchar(BUF_FLUSH);
 				exit(127);
 		         }
 			 return (EXIT_FAILURE);
-
 		}
 		info->readfd = fd;
-			 
-
 	 }
 	 populate_env_list(info);
 	 read_history(info);
 	 hsh(info, av);
 	 return (EXIT_SUCCESS);
 }
-
