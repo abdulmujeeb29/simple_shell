@@ -38,7 +38,7 @@ void ffree(char **pp)
  *
  * Return: pointer to block
  */
-void *realloc(void *ptr, unsigned int old_size, unsigned int new_size)
+void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 {
 	char *p;
 	if (!ptr)
