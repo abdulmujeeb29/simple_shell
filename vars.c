@@ -145,7 +145,7 @@ int replace_vars(info_t *info)
  * 
  * return: 1 if replaced else 0
  */
-int replave_string(char **old, char *new)
+int replace_string(char **old, char *new)
 {
 	free(*old);
 	*old = new;
