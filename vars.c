@@ -87,7 +87,7 @@ int replace_alias(info_t *info)
 		if (!node)
 			return (0);
 		free(info->argv[0]);
-		p = _strchar(node->str, '=');
+		p = _strchr(node->str, '=');
 		if (!p)
 			return (0);
 		p = _strdup(p + 1);
@@ -111,7 +111,7 @@ int replace_vars(info_t *info)
 
 	for (i = 0; info->argv[i]; i++)
 	{
-		if (info->argv[i][0] != '$' || !info->agv[i][1])
+		if (info->argv[i][0] != '$' || !info->argv[i][1])
 			continue;
 
 		if (!_strcmp(info->argv[i], "$?"))
