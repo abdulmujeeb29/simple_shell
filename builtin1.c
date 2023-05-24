@@ -18,7 +18,7 @@ int _myhistory(info_t *info)
  *
  * Return: 0 on success else 1
  */
-int unset_alias(info_t *ifo, char *str)
+int unset_alias(info_t *info, char *str)
 {
 	char *p, c;
 	int ret;
