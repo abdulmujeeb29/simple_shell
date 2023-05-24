@@ -31,7 +31,7 @@ int is_delim(char c, char *delim)
  * Return : 0 if no numbers in string, converted number otherwise 
  */
 
-int_atoi(char *s)
+int _atoi(char *s)
 {
 	int i,sign = 1,flag =0, output;
 	umsigned int result = 0;
