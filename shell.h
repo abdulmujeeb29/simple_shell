@@ -130,8 +130,8 @@ int _putchar(char);
 /* toem_string.c */
 int _strlen(char *);
 int _strcmp(char *, char *);
-char 8starts_with(cont char *, const char *);
-char *_strcat(char *, char *):
+char _starts_with(const char *, const char *);
+char *_strcat(char *, char *);
 
 /* toem_exits.c */
 char *_strncpy(char *, char *, int);
@@ -195,7 +195,7 @@ char **get_environ(info_t *);
 int _unsetenv(info_t *, char *);
 int _setenv(info_t *, char *, char *);
 
-/ * toem_history.c */
+/* toem_history.c */
 char *get_history_file(info_t *info);
 int write_history(info_t *info);
 int read_history(info_t *info);

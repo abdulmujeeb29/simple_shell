@@ -34,7 +34,7 @@ int is_delim(char c, char *delim)
 int _atoi(char *s)
 {
 	int i,sign = 1,flag =0, output;
-	umsigned int result = 0;
+	unsigned int result = 0;
 
 	for (i = 0; s[i] != '\0' && flag != 2; i++)
 	{
@@ -52,7 +52,7 @@ int _atoi(char *s)
 	}
 
 	if (sign == -1)
-		output = -result
+		output = -result;
 	else 
 		output = result;
 
