@@ -4,7 +4,7 @@
  * interactive - returns true if shell is interactive mode
  * @info: structt address 
  *
- * Return : 1 if interactive mode ,0 otherwise
+ * Return: 1 if interactive mode, 0 otherwise
  */
 int interactive(info_t *info)
 {
@@ -15,7 +15,8 @@ int interactive(info_t *info)
  * is_delim - checks if character is a delimeter
  * @c: the char to check
  * @delim: the delimeter string
- * *Return : 1 if true, 0 if false
+ *
+ * Return: 1 if true, 0 if false
  */
 int is_delim(char c, char *delim)
 {
@@ -28,7 +29,8 @@ int is_delim(char c, char *delim)
 /**
  * _isalpha - checksfo character
  * @s : the string to be converted
- * Return : 0 if no numbers in string, converted number otherwise 
+ *
+ * Return: 0 if no numbers in string, converted number otherwise 
  */
 int is_alpha(int c)
 {
@@ -39,9 +41,10 @@ int is_alpha(int c)
 }
 
 /**
- *_atoi - converts a string to an integer
- *@s: the string to be converted
- *Return: 0 if no numbers in string, converted number otherwise
+ * _atoi - converts a string to an integer
+ * @s: the string to be converted
+ *
+ * Return: 0 if no numbers in string, converted number otherwise
  */
 int _atoi(char *s)
 {
