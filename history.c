@@ -38,7 +38,7 @@ char *get_history_file(info_t *info)
 
 int write_history(info_t *info)
 {
-	size_t fd;
+	int fd;
 	char *filename = get_history_file(info);
 	list_t *node = NULL;
 
